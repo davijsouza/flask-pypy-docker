@@ -29,6 +29,6 @@ RUN pip install -r /home/${user}/src/requirements.txt
 ADD nginx-conf/lavender.conf /etc/nginx/conf.d/
 ADD supervisord-conf/ /etc/supervisor/conf.d/
 
-EXPOSE 8006
+EXPOSE 8001
 
 CMD ["supervisord", "--nodaemon", "-c", "/etc/supervisor/supervisord.conf"]
